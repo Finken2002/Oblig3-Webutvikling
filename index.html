@@ -7,11 +7,59 @@
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>Document</title>
+    <title>Skoglede-forside</title>
 </head>
 <body>
-   
+    <div id="grid-container">
+        <header>   
+            <div id="site-name">
+                <a href="index.html" id="logo"><i class="fa-solid fa-shoe-prints fa-3x"></i></a>
+                <h1>Sko Glede</h1>
+            </div>
+            <nav>
+                <div id="left-items">
+                    <i id="hamburger" class="fa-solid fa-bars fa-2x"></i>
+                    <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                </div>
+                <div id="right-items">
+                    <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                    <i class="fa-solid fa-user fa-2x"></i>
+                </div>
+                <ul class="menuitems">
+                    <li><a href="#">Hello</a></li>
+                    <li><a href="#">Hello</a></li>
+                    <li><a href="#">Hello</a></li>
+                    <li><a href="#">Hello</a></li>
+                </ul>
+            </nav>
 
+            
+
+
+
+        </header>
+        <main>
+
+        </main>
+        <footer>
+
+        </footer>
+
+
+    </div>
+    <script>
+
+        let x = document.querySelector(".menuitems")
+
+        document.getElementById("hamburger").addEventListener("click", (e) =>{
+            if (x.className === "menuitems") {
+                x.className += " responsive";
+            } else {
+                x.className = "menuitems"
+            }
+        })
+    
+    </script>
     
 </body>
 </html>
