@@ -210,3 +210,14 @@ footer ul {
     color:#242424;
     margin: 1rem;
 }
+
+/* desktop seksjon */
+
+@media only screen and (min-width:600px) {
+    #grid-container {
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+    }
+
+
+
+}
