@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    background-color: #efefef;
 }
 
 #grid-container {
@@ -8,9 +9,7 @@ body {
     grid-template-areas: "header" "main" "footer";
 }
 
-/*header, main, footer {
-    padding: 1rem;
-}*/
+/* Header seksjon */
 
 header {
     grid-area: header;
@@ -83,6 +82,8 @@ header nav div {
     background-color:lightgray;
 }
 
+/* Main seksjon */
+
 main {
     grid-area: main;
 }
@@ -124,8 +125,88 @@ main {
     text-align: center;
 }
 
+main section h2 {
+    margin: 2rem;
+}
 
+.popular-now {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.popular-now section {
+    max-width: 400px;
+    min-width: 200px;
+    height: auto;
+    background-color: #D1C0A8;
+    padding: 2rem;
+    margin: 2rem;
+    text-align: center;
+    border: 1px solid black
+}
+
+.popular-now section img {
+    width: 100%;
+}
+
+.popular-now section h3, p {
+    text-align: left;
+    font-size: 1rem;
+}
+
+.new-price {
+    color: red
+}
+
+.old-price {
+    color: grey
+}
+
+/* Footer seksjon */
 
 footer {
     grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #A0816C;
+    border-top: 1px solid black;
+    margin-top: 4rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+#subscribe {
+    width: 100%;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+}
+
+.sko-glede {
+    width: 100%;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about li {
+    margin-top: 8px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-brands {
+    color:#242424;
+    margin: 1rem;
 }
