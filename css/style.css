@@ -261,6 +261,32 @@ footer ul {
         width: 50%;
     }
 
+    .flex-section {
+        display: flex;
+    }
+
+    .sale-advertisement {
+        width: 60%;
+    }
+
+    .sale-advertisement img {
+        width: 100%;
+    }
+
+    .category {
+        flex-direction: column;
+        width: 40%;
+        align-items: center;
+    }
+
+    .category a {
+        min-width: 150px;
+        width: 70%;
+        max-width: 400px;
+        min-height: 30px;
+        height: 10%;
+        max-height: 100px;
+    }
 
 
 }
