@@ -275,11 +275,16 @@ main section h2 {
     width: 100%;
 }
 
+#product-card-style {
+    background-color: #D1C0A8;
+    border: 1px solid black;
+    margin-top: 50px;
+}
+
 #product-card {
     height: 150px;
     display: flex;
     background-color: #D1C0A8;
-    border: 1px solid black;
     align-items: center;
     justify-content: space-around;
 }
@@ -314,8 +319,6 @@ main section h2 {
     font-weight: 600;
     background-color: #D1C0A8;
     margin: 0;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
 }
 
 #about-products li {
