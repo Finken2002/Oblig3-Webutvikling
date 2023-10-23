@@ -125,7 +125,6 @@ main {
 .sale-advertisement {
     position: relative;
     text-align: center;
-    color: yellow;
     z-index: 1;
 }
 
@@ -133,11 +132,12 @@ main {
     width: 100%;
 }
 
-.sale-advertisement p {
+.yellow {
     position: absolute;
     bottom: 8px;
     right: 16px;
     font-size: 24px;
+    color: yellow;
 }
 
 .category {
@@ -198,7 +198,6 @@ main section h2 {
 }
 
 /* Høstside */
-
 
 #autumn img {
     width: 100%;
@@ -452,6 +451,11 @@ footer ul {
 /* Høstside */
 
 @media only screen and (min-width:800px) {
+    #autumn {
+        width: 80%;
+        margin: auto;
+    }
+
     #autumn-shoes {
         display: flex;
         flex-direction: row-reverse;
