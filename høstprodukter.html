@@ -55,10 +55,17 @@
                 <p>Nå: 20% på ALLE høstsko!</p>
            </section> 
            <section id="autumn-shoes">
-                <section id="sorting">
-                        <button id="sort">Relevans</button>
-                        <button id="filter">Filter</button>
-                </section>
+                <form class="sorting">
+                    <select name="sort" class="sort">
+                        <option value="#" hidden>Sorter</option>
+                        <option value="relevant">Relevans</option>
+                        <option value="popular">Populært</option>
+                        <option value="sale">Salg</option>
+                        <option value="price-low">Pris lav-høy</option>
+                        <option value="price-high">Pris høy-lav</option>
+                    </select>
+                        <button class="button">Filter</button>
+                </form>
                 <section class="products">
                     <section>
                         <a href="#"><img src="img/fall-1870012_1920.jpg" alt="brune sko i løv med lyseblå bukse"></a>

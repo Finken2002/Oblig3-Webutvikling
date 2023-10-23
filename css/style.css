@@ -213,7 +213,7 @@ main section h2 {
     border: 1px solid black;
 }
 
-#sorting {
+.sorting {
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -221,19 +221,107 @@ main section h2 {
     background-color:#D1C0A8;
 }
 
-#sort {
+.sort {
     background-color: #fff;
     margin: 10px;
     font-size: 18px;
     width: 40%;
 }
 
-#filter {
+.button {
     background-color: black;
     color: #fff;
     margin: 10px;
     font-size: 18px;
     width: 40%;
+}
+
+/* Produktside */
+
+#product-style{
+    display: flex;
+    flex-direction: column;
+}
+
+#product {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#star {
+    width: 100%;
+    height: 50px;
+    padding: 1rem;
+}
+
+.fa-star2 {
+    border: 2px solid black;
+    border-radius: 75px;
+}
+
+#left-arrow, #right-arrow {
+    width: 15%;
+    text-align: center;
+}
+
+#product-img {
+    width: 70%;
+}
+
+#product img {
+    width: 100%;
+}
+
+#product-card {
+    height: 150px;
+    display: flex;
+    background-color: #D1C0A8;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#color p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#color a {
+    border: 1px solid black;
+    border-radius: 75px;
+    padding: 15px 25px;
+    margin: 5px;
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+}
+
+.brown {
+    background-color: #5c4033 ;
+}
+
+#about-products {
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #D1C0A8;
+    margin: 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#about-products li {
+    border-bottom: 1px solid black;
+    width: 300px;
+    margin: 10px;
 }
 
 /* Footer seksjon */
@@ -361,7 +449,7 @@ footer ul {
         flex-direction: row-reverse;
     }
 
-    #sorting {
+    .sorting {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
@@ -372,7 +460,7 @@ footer ul {
         padding-top: 16px;
     }
 
-    #sort, #filter {
+    .sort, .button {
         width: 80%
     }
 
