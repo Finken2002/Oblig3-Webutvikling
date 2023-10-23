@@ -56,6 +56,10 @@ header a {
     text-decoration: none;
 }
 
+input[type=text] {
+    color: gray;
+}
+
 .desktop-nav {
     display: none;
 }
@@ -124,10 +128,10 @@ main {
 .category {
     display: flex;
     justify-content: space-around;
+    text-align: center;
 }
 
 .category a {
-    display: inline-block;
     padding: 1.5rem;
     text-decoration: none;
     background-color: #A0816C;
@@ -136,8 +140,7 @@ main {
     font-size: 24px;
     border: 1px solid black;
     border-radius: 15px;
-    width: 20%;
-    text-align: center;
+    width: 20%;  
 }
 
 main section h2 {
@@ -152,7 +155,7 @@ main section h2 {
 }
 
 .popular-now section {
-    max-width: 400px;
+    max-width: 300px;
     min-width: 200px;
     height: auto;
     background-color: #D1C0A8;
@@ -243,7 +246,7 @@ footer ul {
     }
 
     .responsive {
-        width: 40%;
+        width: 38.8%;
     }
 
     .mobile-nav {
@@ -263,30 +266,34 @@ footer ul {
 
     .flex-section {
         display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
     }
 
     .sale-advertisement {
         width: 60%;
-    }
-
-    .sale-advertisement img {
-        width: 100%;
+        margin-right: 3%;
     }
 
     .category {
         flex-direction: column;
         width: 40%;
+        justify-content: space-around;
         align-items: center;
     }
 
     .category a {
-        min-width: 150px;
         width: 70%;
-        max-width: 400px;
-        min-height: 30px;
         height: 10%;
-        max-height: 100px;
     }
 
+    .popular-now section {
+        width: 200px;
+    }
+
+    footer h2 {
+        text-align: center;
+        font-family: 'Inika', serif;
+    }
 
 }
