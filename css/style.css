@@ -324,6 +324,11 @@ main section h2 {
     margin: 10px;
 }
 
+#about-products a {
+    text-decoration: none;
+    color: black;
+}
+
 /* Footer seksjon */
 
 footer {
@@ -443,7 +448,7 @@ footer ul {
 
 /* Høstside */
 
-@media only screen and (min-width:600px) {
+@media only screen and (min-width:800px) {
     #autumn-shoes {
         display: flex;
         flex-direction: row-reverse;
@@ -464,5 +469,35 @@ footer ul {
         width: 80%
     }
 
+
+/* Produktside */
+
+    @media only screen and (min-width:800px) {
+        #product-style {
+            flex-direction: row;
+        }
+
+        #product-card-style {
+            background-color: #D1C0A8;
+            border: 1px solid black;
+            max-height: 500px;
+            margin-top: 50px;
+        }
+
+        #product-card {
+            flex-direction: column;
+        }
+
+        #product-card, #about-products {
+            border: none;
+        }
+
+        #color {
+            display: flex;
+            border: 1px solid black;
+            padding: 0 4px;
+        }
+
+    }   
 
 }
