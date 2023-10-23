@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Skoglede-forside</title>
+</head>
+<body>
+    <div id="grid-container">
+        <header>   
+            <div id="site-name">
+                <div>
+                    <a href="index.html"><i class="fa-solid fa-shoe-prints fa-3x"></i></a>
+                    <a href="index.html"><h1>Sko Glede</h1></a>  
+                </div>
+                <div>
+                    <a href="#" class="desktop-nav">MINE SIDER</a>
+                    <a href="#" class="desktop-nav"><i class="fa-solid fa-user fa-2x"></i></a>
+                </div>
+            </div>
+            <nav>
+                <div>
+                    <a href="#"><i id="hamburger" class="fa-solid fa-bars fa-2x"></i></a>
+                    <a href="#" class="desktop-nav">Meny</a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
+                    <input type="search" name="søk" placeholder="søk.." class="desktop-nav searchbar">
+                </div>
+                <ul>
+                    <li><a href="#" class="desktop-nav">Favoritter</a></li>
+                    <li><a href="#"><i class="fa-regular fa-star fa-2x"></i></a></li>
+                    <li><a href="#" class="desktop-nav">Handlekurv</a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping fa-2x"></i></a></li>
+                    <li><a href="#" class="mobile-nav"><i class="fa-solid fa-user fa-2x"></i></a></li>
+                </ul>
+                <ul class="menuitems">
+                    <li><a href="#">Salg</a></li>
+                    <li><a href="#">Trender</a></li>
+                    <li><a href="#">Medlemsklubb</a></li>
+                    <li><a href="#">Finn butikk</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            
+        </main>
+        <footer>
+            <section id="subscribe">
+                <h3>Abonner på vårt nyhetsbrev!</h3>
+                <form>
+                    <label for="email-signup">Din e-postadresse</label>
+                    <input type="email" name="email" placeholder="din e-postadresse her.." id="email-signup">
+                    <input type="submit" value="Abonner nå">
+                </form>
+            </section>
+            <h2 class="sko-glede">Sko Glede</h2>
+            <nav>
+                <section class="about">
+                    <ul>
+                        <li><a href="#">Om oss</a></li>
+                        <li><a href="#">Kontakt oss</a></li>
+                        <li><a href="#">Registrer deg som kunde</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Betaling og sikkerhet</a></li>
+                        <li><a href="#">Frakt og leveranse</a></li>
+                        <li><a href="#">Retur av vare</a></li>
+                    </ul>
+                </section>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a></li>
+                </ul>
+            </nav>
+        </footer>
+
+
+    </div>
+    <script>
+
+        let x = document.querySelector(".menuitems")
+
+        document.getElementById("hamburger").addEventListener("click", (e) =>{
+            if (x.className === "menuitems") {
+                x.className += " responsive";
+            } else {
+                x.className = "menuitems"
+            }
+        })
+    
+    </script>
+    
+</body>
+</html>

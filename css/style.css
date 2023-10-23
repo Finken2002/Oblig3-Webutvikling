@@ -41,6 +41,7 @@ header div {
 header nav {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #fff;
 }
 
 header ul {
@@ -101,11 +102,25 @@ input[type=text] {
     background-color:lightgray;
 }
 
+/* Høstside og produktside */
+
+#breadcrumb li+li:before {
+    padding: 1rem;
+    content: "/"
+}
+
+#breadcrumb li a:hover {
+    text-decoration: underline;
+    font-size: 17px;
+}
+
 /* Main seksjon */
 
 main {
     grid-area: main;
 }
+
+/* Hovedside */
 
 .sale-advertisement {
     position: relative;
@@ -147,14 +162,14 @@ main section h2 {
     margin: 2rem;
 }
 
-.popular-now {
+.products {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.popular-now section {
+.products section {
     max-width: 300px;
     min-width: 200px;
     height: auto;
@@ -165,11 +180,11 @@ main section h2 {
     border: 1px solid black
 }
 
-.popular-now section img {
+.products section img {
     width: 100%;
 }
 
-.popular-now section h3, p {
+.products section h3, p {
     text-align: left;
     font-size: 1rem;
 }
@@ -180,6 +195,45 @@ main section h2 {
 
 .old-price {
     color: grey
+}
+
+/* Høstside */
+
+
+#autumn img {
+    width: 100%;
+}
+
+#autumn p {
+    background-color: yellow;
+    font-size: 1.5rem;
+    height: 40px;
+    width: 100%;
+    margin: 0;
+    border: 1px solid black;
+}
+
+#sorting {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+    background-color:#D1C0A8;
+}
+
+#sort {
+    background-color: #fff;
+    margin: 10px;
+    font-size: 18px;
+    width: 40%;
+}
+
+#filter {
+    background-color: black;
+    color: #fff;
+    margin: 10px;
+    font-size: 18px;
+    width: 40%;
 }
 
 /* Footer seksjon */
@@ -287,13 +341,40 @@ footer ul {
         height: 10%;
     }
 
-    .popular-now section {
+    .products section {
         width: 200px;
+        max-height: 350px;
     }
 
     footer h2 {
         text-align: center;
         font-family: 'Inika', serif;
     }
+
+}
+
+/* Høstside */
+
+@media only screen and (min-width:600px) {
+    #autumn-shoes {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    #sorting {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: auto;
+        min-width: 250px;
+        max-width: 300px;
+        margin-top: 32px;
+        padding-top: 16px;
+    }
+
+    #sort, #filter {
+        width: 80%
+    }
+
 
 }
